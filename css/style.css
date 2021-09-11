@@ -1,0 +1,140 @@
+html body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content:space-between;
+	align-items: center;
+}
+#canvasBox{
+	/*display: inline-flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;*/
+	position: relative;
+	background: #4499ff;
+	width: 500px;
+	height: 400px;
+
+}
+#canvas{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+body{
+	background-color: #222;
+	font-family: "Helvetica";
+	overflow: hidden;
+}
+#sidebar{
+	left:-250px;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	padding: 30px;
+	/*box-sizing: border-box;*/
+	color: #49f;
+	background-color: rgba(0, 0, 0,.5);
+	font-size: 14px;
+	-webkit-transition: all .5s linear;
+}
+#sidebar h1{
+	font-size: 30px;
+	padding: 0;
+	color: orange;
+	margin: 10px 0 30px 30px;
+	font-family: "Microsoft Yahei";
+	font-weight: 100;
+}
+#sidebar p{
+	margin-bottom: -10px;
+}
+#sidebar input{
+	border: none;
+	background-color: transparent;
+	margin: 20px 0;
+	outline: none;
+}
+
+#shapeInput,#backgroundInput{
+	/*display: inline-block;*/
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #222;
+	color: #444;
+}
+#shapeInput{
+	border-right:none;
+	margin-right: -5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: orange;
+}
+#backgroundInput{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#shapeSidebar input[type="text"]{
+	width: 100%;
+	font-size: 25px;
+	appearance: none;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #ededed;
+	color: #ededed;
+}
+
+#shapeSidebar input[type="range"]{
+	width: 100%;
+	-webkit-appearance: none;
+	background-color: silver;
+	height: 8px;
+}
+#shapeSidebar input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	background-color: seagreen;
+	width: 10px;
+	height: 20px;
+}
+#shapeSidebar input[type="button"]{
+	padding: 5px;
+	margin: 5px 0;
+	background-color: #ff2948;
+	border: 0px;
+	width: 100%;
+	color: white;
+	font-weight: white;
+}
+#shapeSidebar{
+	display: block;
+}
+#backgroundSidebar{
+	display: none;
+}
+#backgroundSidebar .boxGreen,.boxRed,.boxYellow{
+	width: auto;
+	height: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+.boxGreen{
+	background-color: #8BC34A;
+}
+.boxRed{
+	background-color:#f44336;
+}
+.boxYellow{
+	background-color:#FFC107;
+}
